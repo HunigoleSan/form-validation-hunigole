@@ -13,6 +13,7 @@ let messageResponse = {
         let patternErrorCellCharacters = /[a-zA-Z!@$%^&*()_+-/]+/;
         let patternSpace = /^\s+/
         let patternNumber = /[\W\d_]+\s/g
+        let patternDate = /^\d{4}-\d{2}-\d{2}/
 
         let stateMessage = false
         for (const key in message) {
@@ -24,7 +25,7 @@ let messageResponse = {
                     if(input.id === "name_" || input.id ==="second_name" || input.id === "last_name"){
                         if (String(input.value).trim() == "") {
                             if(input.id === "second_name"){
-                                message[key].textContent = "opcional"
+                                message[key].textContent = "optional"
                                 stateMessage = false
                             }else{
                                 message[key].textContent = "Should not be empety"
@@ -60,20 +61,20 @@ let messageResponse = {
                         message[key].classList.remove("form__message-success")
                         message[key].classList.add("form__message-error")
                         if (stateSelectNationality === undefined) {
-                            message[key].textContent = "Por favor seleccione una nacionalidad"
+                            message[key].textContent = "Pleade select a nationality"
                             stateMessage = true
                         } else {
                             if (input.value.trim() == "") {
-                                message[key].textContent = "No puede estar vacio"
+                                message[key].textContent = "It shouldn't be empty"
                                 stateMessage = true
                             } else if (patternErrorSpace.test(input.value)) {
-                                message[key].textContent = "Por favor elimine todos los espacios"
+                                message[key].textContent = "Please delete all spaces"
                                 stateMessage = true
                             } else if (patternErrorCellCharacters.test(input.value)) {
-                                message[key].textContent = "Por favor no use simbolos  o letras"
+                                message[key].textContent = "please do not use symbols or letters"
                                 stateMessage = true
                             } else if (String(input.value).length >= limitDigit) {
-                                message[key].textContent = `No puede superar la cantidad de ${limitDigit}`
+                                message[key].textContent = `It cannot exceed the amount of ${limitDigit}`
                                 stateMessage = true
                             } else if(String(input.value).length == stateSelectNationality){
                                 message[key].textContent = "Correct"
@@ -85,7 +86,7 @@ let messageResponse = {
                                 message[key].classList.add("form__message-success")
                                 stateMessage = false
                             }else {
-                                message[key].textContent = `Debe contener ${stateSelectNationality}`
+                                message[key].textContent = `Must contain ${stateSelectNationality}`
                                 stateMessage = true
                             }
                         }
@@ -93,7 +94,7 @@ let messageResponse = {
                     if(input.tagName === "SELECT" && input.id == "nationality"){
                         message[key].classList.add("meesageAnimation")
                         if(input.value === "choose"){
-                            message[key].textContent = "Por favor seleccione una nacionalidad"
+                            message[key].textContent = "Please select a nationality"
                             stateMessage = true
                         }else{
                             message[key].textContent = "Correct"
@@ -102,7 +103,7 @@ let messageResponse = {
                         customizationForm(stateMessage, parentInput, childSibling, message[key])
                     }else if(input.tagName === "SELECT"){
                         if(input.value === "choose"){
-                            message[key].textContent = `Por favor seleccion un ${sibling.textContent}`
+                            message[key].textContent = `Please select a ${sibling.textContent}`
                             stateMessage = true
                         }else{
                             message[key].textContent = `Correct`
@@ -110,6 +111,18 @@ let messageResponse = {
                         }
                         customizationForm(stateMessage, parentInput, childSibling, message[key])
                     }
+
+                    if( input.id === "date_of_birth"){
+                        if(patternDate.test(input.value)){
+                            message[key].textContent = `Correct`
+                            stateMessage = false
+                        }else{
+                            message[key].textContent = `Please select a ${sibling.textContent}`
+                            stateMessage = true
+                        }
+                        customizationForm(stateMessage, parentInput, childSibling, message[key])
+                    }
+                    console.log("fecha", input.tagName)
                 }
             }
         }

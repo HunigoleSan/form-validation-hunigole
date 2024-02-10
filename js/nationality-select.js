@@ -64,14 +64,7 @@ window.addEventListener("DOMContentLoaded", function () {
             cell_HTML.addEventListener("mousedown", preventAction)
             objectInput.city.state = false
             objectInput.cell.state = false 
-            /* setProgress(data,objectInput,true) */
 
-            /* if (statesSelect) { */
-                /* console.log(objectInput.city)
-                objectInput.city.state = false
-                objectInput.cell.state = false */
-               /*  statesSelect = false
-            } */
             city_HTML.addEventListener('click',function(event){event.preventDefault()})
 
         } else if (typeof (data) === "object" && data.value != "choose") {
@@ -117,9 +110,6 @@ window.addEventListener("DOMContentLoaded", function () {
                     city_HTML.insertAdjacentElement("beforeend", optionCreate)
                 }
             }
-            /* if (statesSelect == false) {
-                statesSelect = true
-            } */
         }
     }
 
