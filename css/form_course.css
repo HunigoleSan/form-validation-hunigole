@@ -74,7 +74,7 @@ body:has(.open){
     padding-top: 4rem;    
 }
 .header__title{
-    color: var(--text-black-1);
+    color: var(--text-air-force-blue);
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: .8rem;
@@ -105,6 +105,7 @@ body:has(.open){
     width: 100%
 }
 .form__subTitle{
+    color: var(--text-air-force-blue);
     padding-bottom: 1.6rem;
     font-weight: 400;
     font-size: 1.8rem;
@@ -128,6 +129,7 @@ body:has(.open){
 .form__label{
     font-size: 1.5rem;
     line-height: 2rem;
+    color: var(--text-air-force-blue);
 
 }
 
@@ -140,6 +142,10 @@ body:has(.open){
     border-bottom: 1px solid var(--border-grey);
     font-size: 1.5rem;
     width: 100%;
+    color: #555555;
+}
+.form__control:placeholder-shown{
+    color: red;
 }
 .form__submit{
     border: 0px;

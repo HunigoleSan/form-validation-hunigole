@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded", function () {
             labelCell.classList.add("form-not-event")
             cell_error_HTML.classList.remove("meesageAnimation")
             cell_error_HTML.classList.add("meesageAnimation")
+            cell_error_HTML.classList.remove("form__message-error")
             cellPrevious.classList.add("form__input-border-default")
             cellPrevious.classList.add("form-select-default")
             cellPrevious.classList.remove("form__input-border-error")
