@@ -1,0 +1,22 @@
+:root{
+    /* #Primary */
+    --soft-purple: rgba(241,243,255,100%);
+    --soft-grey: rgba(248,249,253,100%);
+    --fluorescent-green: rgba(79,245,176,90%);
+
+    --text-black-1: #333333;
+    --border-grey: #E6E7EC;
+    --border-red: rgb(255, 62, 62);
+    --border-green: rgba(79,245,176,90%);
+    --border-default: rgba(105, 105, 105, 100%);
+    --shadow-black-transparent: rgba(0,0,0,15%);
+    --shadow-default: rgb(167, 167, 167);
+    --white: #ffffff;
+    --purple: #7879E4;
+    --green:rgba(79,245,176,90%);
+
+    --red: rgb(255, 62, 62);
+    --message-error: rgb(255, 62, 62);
+    --message-success: rgb(73, 152, 255);
+    --message-default: rgba(105, 105, 105, 100%);
+}

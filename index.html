@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inscription Course</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/var.css">
+    <link rel="stylesheet" href="css/form_course.css">
+    <link rel="stylesheet" href="css/box_bg.css">
+    <link rel="stylesheet" href="css/box_bg-animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="inscription" class="inscription">
+        <div class="box">
+            <div class="rect rect-purple-1"></div>
+            <div class="rect rect-purple-7"></div>
+            <div class="rect rect-purple-8"></div>
+            <div class="rect rect-purple-9"></div>
+            <div class="rect rect-purple-11"></div>
+            <div class="rect rect-purple-4"></div>
+            <div class="rect rect-purple-5"></div>
+            <div class="rect rect-purple-6"></div>
+            <div class="rect rect-green-2"></div>
+            <div class="rect rect-green-3"></div>
+            <div class="rect rect-green-4"></div>
+            <div class="rect rect-sky-1"></div>
+            <div class="rect rect-sky-3"></div>
+            <div class="rect rect-sky-32"></div>
+            <div class="rect rect-sky-4"></div>
+            <div class="rect rect-sky-5"></div>
+            <div class="rect rect-sky-7"></div>
+            <div class="rect rect-sky-8"></div>
+            <div class="rect rect-sky-10"></div>
+            <div class="rect rect-sky-11"></div>
+            <div class="rect rect-purple-62"></div>
+            <div class="rect rect-green-7"></div>
+            <div class="rect rect-green-8"></div>
+            <div class="rect rect-green-6"></div>
+            <div class="rect rect-purple-2"></div>
+            <div class="rect rect-purple-3"></div>
+            <div class="rect rect-green-1"></div>
+            <div class="rect rect-purple-10"></div>
+            <div class="rect rect-purple-82"></div>
+            <div class="rect rect-sky-9"></div>
+            <div class="rect rect-sky-2"></div>
+            <div class="rect rect-green-5"></div>
+        </div>
+        <section class="inscription__data">
+            <div class="inscription__progress">
+                <p class="inscription__progress-title">Progress</p>
+                <div class="inscription__progress-bar">
+                    <div id="progress" class="bar">
+                    </div>
+                </div>
+                <p id="progress-value" class="inscription__progress-value">00%</p>
+            </div>
+            <header class="header">
+                <h1 class="header__title">Form Inscription Course</h1>
+            </header>
+            <form id="form_inscription" class="form" action="">
+                <fieldset class="form__buttons">
+                    <div class="form__row">
+                        <h3 class="form__subTitle">Student's name</h3>
+                        <div class="form__button">
+                            <div class="form__control_data">
+                                <div class="form__input">
+                                    <label class="form__label" for="name">Name <b class="purple colors">*</b> </label>
+                                    <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" maxlength="30" type="text" name="name" data-user="true" id="name_" required>
+                                </div>
+                                <p id="name-error" class="message name"></p>
+                            </div>
+                            <div class="form__control_data">
+                                <div class="form__input">
+                                    <label class="form__label" for="second_name">Second Name <b class="purple colors">*</b> </label>
+                                    <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" maxlength="30" type="text" name="second_name" data-user="null" id="second_name">
+                                </div>
+                                <p id="second-name-error" class="message second_name"></p>
+                            </div>
+                            <div class="form__control_data">
+                                <div class="form__input">
+                                    <label class="form__label" for="last_name">Last Name <b class="purple colors">*</b> </label>
+                                    <input class="form__control control" maxlength="60" type="text" data-user="true" name="last_name" id="last_name">
+                                </div>
+                                <p id="last-name-error" class="message last_name"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__btns">
+                            <div class="width-50">
+                                <h3 class="form__subTitle">Date of birth</h3>
+                                <div class="form__button">
+                                    <div class="form__control_data form__control_data-width">
+                                        <div class="form__input">
+                                            <label class="form__label city-title" for="date_of_birth">Date <b class="purple colors">*</b> </label>
+                                            <input class="form__control control" type="date" data-user="true" name="date_of_birth" id="date_of_birth">
+                                            
+                                        </div>
+                                        <p id="date-of-birth-error" class="message date_of_birth"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="width-50">
+                                <h3 class="form__subTitle">Genre</h3>
+                                <div class="form__button">
+                                    <div class="form__control_data form__control_data-width">
+                                        <div class="form__input">
+                                            <label class="form__label city-title" for="genre">Genre <b class="purple colors">*</b> </label>
+                                            <select id="genre" class="form__control control" data-user="true" name="genre" required>
+                                                <option value="choose">Choose</option>
+                                                <option value="Femenina">Femenina</option>
+                                                <option value="Masculino">Masculino</option>
+                                            </select>
+                                        </div>
+                                        <p id="genre-error" class="message genre"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form__row">
+                        <div class="form__btns">      
+                            <div class="width-50">
+                                <h3 class="form__subTitle">Nationality</h3>
+                                <div class="form__button">
+                                    <div class="form__control_data form__control_data-width">
+                                        <div class="form__input">
+                                            <label class="form__label city-title" for="nationality">Nationality <b class="purple colors">*</b> </label>
+                                            <select id="nationality" class="form__control control" name="nationality" data-user="true" required>
+                                                <option value="choose">Choose</option>
+                                                <option value="peruana">Peruana</option>
+                                                <option value="chilena">Chilena</option>
+                                                <option value="argentino">Argentino</option>
+                                                <option value="mexicana">México</option>
+                                                <option value="estadounidenses">Estadounidenses</option>
+                                            </select>
+                                        </div>
+                                        <p id="nationality-error" class="message nationality"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="width-50">
+                                <h3 id="city-title" class="form__subTitle">City</h3>
+                                <div class="form__button">
+                                    <div class="form__control_data form__control_data-width">
+                                        <div class="form__input">
+                                            <label class="form__label city-title" for="city">City <b class="purple colors">*</b> </label>
+                                            <select id="city" class="form__control control" data-user="true" name="city" required>
+                                                <option value="choose">Choose</option>
+                                            </select>
+                                        </div>
+                                        <p id="date-error" class="message city"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__btns">      
+                            <div class="width-50">
+                                <h3 class="form__subTitle">Cell phone</h3>
+                                <div class="form__button">
+                                    <div class="form__control_data form__control_data-width">
+                                        <div class="form__input">
+                                            <label class="form__label" for="cell">Cell <b class="purple colors">*</b> </label>
+                                            <div class="flex">
+                                                <div id="prefix" class="form__prefix">--</div>
+                                                <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" type="tel" maxlength="9" name="cell" data-user="true" id="cell" required>
+                                            </div>
+                                        </div>
+                                        <p id="cell-error" class="message cell"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="width-50">
+                                <h3 id="city-title" class="form__subTitle">Course</h3>
+                                <div class="form__button">
+                                    <div class="form__control_data form__control_data-width">
+                                        <div class="form__input">
+                                            <label class="form__label city-title" for="course">Course <b class="purple colors">*</b> </label>
+                                            <select id="course" class="form__control control" data-user="true" name="course" required>
+                                                <option value="choose">Choose</option>
+                                                <option value="frontEnd">Front-end</option>
+                                                <option value="backEnd">Back-end</option>
+                                                <option value="fullStack">Full-stack</option>
+                                                <option value="DesignUxUi">Design ux/ui</option>
+                                            </select>
+                                        </div>
+                                        <p id="course-error" class="message course"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="form__row">
+                        <button id="submit" type="button" class="form__submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </section>
+    <script src="js/form-validation.js" type="module"></script>
+    <script src="js/nationality-select.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+
+
+</body>
+
+</html>

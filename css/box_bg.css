@@ -1,0 +1,409 @@
+.box,
+.box * {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 1079.41px;
+    height: 1276.41px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(10%,-50%);
+}
+.rect{
+    transform-origin: 0 0;
+    border-radius: 16px;
+    position: absolute;
+    /* box-shadow: -20px -40px 30px 0px rgba(0, 0, 0, 0.2); */
+    transform: rotate(45deg) scale(1, 1);
+}
+
+.rect-purple-1 {
+    background: rgba(107, 107, 227, 0.9);
+    right: 41.16%;
+    left: 20.67%;
+    width: 38.17%;
+    bottom: 74.14%;
+    top: 16.77%;
+    height: 9.09%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.4); */
+}
+
+.rect-purple-7 {
+    background: rgba(156, 98, 245, 0.9);
+    right: 8.23%;
+    left: 60.47%;
+    width: 31.3%;
+    bottom: 44.66%;
+    top: 47.89%;
+    height: 7.46%;
+    
+}
+
+.rect-purple-8 {
+    background: #8e42fe;
+    right: -8.74%;
+    left: 63.96%;
+    width: 44.79%;
+    bottom: 99.75%;
+    top: -7.2%;
+    height: 7.46%;
+    
+}
+
+.rect-purple-9 {
+    background: rgba(194, 162, 247, 0.9);
+    right: 44.32%;
+    left: 31.72%;
+    width: 23.96%;
+    bottom: 33.54%;
+    top: 60.53%;
+    height: 5.94%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.rect-purple-11 {
+    background: rgba(158, 97, 243, 0.9);
+    border-radius: 8px;
+    right: -5.04%;
+    left: 84.37%;
+    width: 20.67%;
+    bottom: 19.14%;
+    top: 74.8%;
+    height: 6.06%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.rect-purple-4 {
+    background: rgba(129, 127, 254, 0.9);
+    border-radius: 8px;
+    right: 40.38%;
+    left: 46.6%;
+    width: 13.02%;
+    bottom: 31.53%;
+    top: 65.99%;
+    height: 2.48%;
+    
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-purple-5 {
+    background: rgba(129, 127, 254, 0.9);
+    border-radius: 8px;
+    right: 55.76%;
+    left: 31.22%;
+    width: 13.02%;
+    bottom: 8.18%;
+    top: 89.34%;
+    height: 2.48%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-purple-6 {
+    background: rgba(181, 184, 253, 0.7);
+    border-radius: 8px;
+    right: 48.24%;
+    left: 26.12%;
+    width: 25.64%;
+    bottom: 25.86%;
+    top: 69.26%;
+    height: 4.88%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-green-2 {
+    background: rgba(114, 235, 188, 0.9);
+    border-radius: 8px;
+    right: 19.15%;
+    left: 57.9%;
+    width: 22.95%;
+    bottom: 15.96%;
+    top: 81.98%;
+    height: 2.07%;
+    
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-green-3 {
+    background: rgba(79, 245, 176, 0.9);
+    border-radius: 8px;
+    right: 77.05%;
+    left: 0%;
+    width: 22.95%;
+    bottom: 76.41%;
+    top: 21.52%;
+    height: 2.07%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-green-4 {
+    background: rgba(79, 245, 176, 0.9);
+    border-radius: 8px;
+    right: 80.24%;
+    left: 1.37%;
+    width: 18.39%;
+    bottom: 92.18%;
+    top: 5.76%;
+    height: 2.07%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-1 {
+    background: rgba(106, 219, 210, 0.9);
+    border-radius: 8px;
+    right: 76.12%;
+    left: 13.8%;
+    width: 10.08%;
+    bottom: 14.38%;
+    top: 81.82%;
+    height: 3.8%;
+    
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-3 {
+    background: rgba(100, 190, 216, 0.9);
+    border-radius: 8px;
+    right: 6.4%;
+    left: 70.58%;
+    width: 23.02%;
+    bottom: 43.26%;
+    top: 52.02%;
+    height: 4.72%;
+    
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-32 {
+    background: rgba(107, 203, 199, 0.9);
+    border-radius: 8px;
+    right: 29.36%;
+    left: 47.62%;
+    width: 23.02%;
+    bottom: 34.21%;
+    top: 61.08%;
+    height: 4.72%;
+    /* box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4); */
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-4 {
+    background: rgba(186, 214, 228, 0.9);
+    border-radius: 8px;
+    right: 59.3%;
+    left: 26.66%;
+    width: 14.04%;
+    bottom: 74.69%;
+    top: 22.23%;
+    height: 3.08%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-5 {
+    background: rgba(111, 193, 215, 0.9);
+    border-radius: 8px;
+    right: 70.57%;
+    left: 6.18%;
+    width: 23.25%;
+    bottom: 87.87%;
+    top: 7.32%;
+    height: 4.81%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-7 {
+    background: #62bad2;
+    border-radius: 8px;
+    right: 39.48%;
+    left: 39.19%;
+    width: 21.33%;
+    bottom: 73.32%;
+    top: 23.3%;
+    height: 3.38%;
+    /* box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4); */
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-8 {
+    background: rgba(129, 200, 222, 0.9);
+    border-radius: 8px;
+    right: 77.62%;
+    left: 0.56%;
+    width: 21.82%;
+    bottom: 8.87%;
+    top: 86.94%;
+    height: 4.18%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-10 {
+    background: rgba(107, 220, 212, 0.9);
+    border-radius: 8px;
+    right: 26.09%;
+    left: 52.3%;
+    width: 21.61%;
+    bottom: 92.54%;
+    top: 3.09%;
+    height: 4.37%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-11 {
+    background: rgba(189, 218, 232, 0.9);
+    border-radius: 8px;
+    right: 4.66%;
+    left: 73.28%;
+    width: 22.06%;
+    bottom: 64.18%;
+    top: 31.45%;
+    height: 4.37%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-purple-62 {
+    background: rgba(129, 127, 254, 0.9);
+    border-radius: 6px;
+    right: 89.21%;
+    left: 4.17%;
+    width: 6.62%;
+    bottom: 18.53%;
+    top: 80.05%;
+    height: 1.42%;
+    
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-green-7 {
+    background: rgba(137, 233, 200, 0.9);
+    border-radius: 8px;
+    right: 8.14%;
+    left: 79.12%;
+    width: 12.74%;
+    bottom: 74.33%;
+    top: 23.8%;
+    height: 1.87%;
+    
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-green-8 {
+    background: rgba(178, 242, 223, 0.9);
+    border-radius: 8px;
+    right: 57.62%;
+    left: 29.65%;
+    width: 12.74%;
+    bottom: 80.05%;
+    top: 18.08%;
+    height: 1.87%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-green-6 {
+    background: rgba(178, 242, 223, 0.9);
+    border-radius: 8px;
+    right: 15.36%;
+    left: 73.56%;
+    width: 11.08%;
+    bottom: 53.59%;
+    top: 44.79%;
+    height: 1.62%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-purple-2 {
+    background: rgba(129, 127, 254, 0.9);
+    right: 4.83%;
+    left: 75.69%;
+    width: 19.48%;
+    bottom: 76.7%;
+    top: 18.83%;
+    height: 4.47%;
+    
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-purple-3 {
+    background: rgba(81, 85, 255, 0.8);
+    right: -11.18%;
+    left: 73.01%;
+    width: 38.17%;
+    bottom: 20.16%;
+    top: 70.75%;
+    height: 9.09%;
+}
+
+.rect-green-1 {
+    background: rgba(114, 235, 188, 0.9);
+    border-radius: 8px;
+    right: 79.92%;
+    left: 10.01%;
+    width: 10.08%;
+    bottom: 8.88%;
+    top: 89.05%;
+    height: 2.07%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-purple-10 {
+    background: rgba(179, 134, 251, 0.9);
+    border-radius: 8px;
+    right: 54.51%;
+    left: 28.76%;
+    width: 16.73%;
+    bottom: 9.91%;
+    top: 85.94%;
+    height: 4.15%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.rect-purple-82 {
+    background: #c2a2f7;
+    right: -0.89%;
+    left: 56.65%;
+    width: 44.25%;
+    bottom: 77.96%;
+    top: 14.58%;
+    height: 7.46%;
+    /* box-shadow: -20px -40px 50px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.rect-sky-9 {
+    background: rgba(107, 220, 212, 0.9);
+    border-radius: 8px;
+    right: 27.77%;
+    left: 63.65%;
+    width: 8.58%;
+    bottom: 77.51%;
+    top: 20.51%;
+    height: 1.98%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-sky-2 {
+    background: #64bed8;
+    border-radius: 8px;
+    right: 12.62%;
+    left: 71.15%;
+    width: 16.23%;
+    bottom: 9.81%;
+    top: 85.97%;
+    height: 4.23%;
+    transform: rotate(45deg) scale(1, -1);
+}
+
+.rect-green-5 {
+    background: rgba(79, 245, 176, 0.9);
+    border-radius: 8px;
+    right: 21.49%;
+    left: 65.77%;
+    width: 12.74%;
+    bottom: 91.17%;
+    top: 6.97%;
+    height: 1.87%;
+    transform: rotate(45deg) scale(1, -1);
+}

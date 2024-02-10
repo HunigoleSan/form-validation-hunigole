@@ -1,0 +1,62 @@
+
+/* .rect-purple-1{
+    animation: rect-purple-1 12s 2s linear infinite;
+    transform: translate(40vw,120vh)rotate(45deg);
+}
+@keyframes rect-purple-1 {
+    to{
+        transform: translate(-55vw,-10vh)rotate(45deg);
+    }
+    from{
+        transform: translate(40vw,120vh)rotate(45deg);
+    }
+}
+.rect-purple-7{
+    transform: translate(80vw,95vh)rotate(45deg);
+    animation: rect-purple-7 20s .3s linear infinite;
+}
+@keyframes rect-purple-7 {
+    to{
+        transform: translate(-27vw,-45vh)rotate(45deg);
+    }
+    from{
+        transform: translate(80vw,95vh)rotate(45deg);
+    }
+}
+.rect-purple-8{
+    transform: translate(85vw,30vh)rotate(45deg);
+    animation: rect-purple-8 5s 4s linear infinite;
+}
+@keyframes rect-purple-8 {
+    to{
+        transform: translate(38vw,-30vh)rotate(45deg);
+    }
+    from{
+        transform: translate(85vw,30vh)rotate(45deg);
+    }
+}
+.rect-purple-9{
+    transform: translate(60vw,115vh)rotate(45deg);
+    animation: rect-purple-9 15s 1.5s linear infinite;
+
+}
+@keyframes rect-purple-9 {
+    to{
+        transform: translate(-45vw,-20vh)rotate(45deg);
+    }
+    from{
+        transform: translate(60vw,115vh)rotate(45deg);
+    }
+}
+.rect-purple-11{
+    transform: translate(85vw,105vh)rotate(45deg);
+    animation: rect-purple-11 12s .6s linear infinite;
+}
+@keyframes rect-purple-11 {
+    to{
+        transform: translate(-18vw,-20vh)rotate(45deg);
+    }
+    from{
+        transform: translate(85vw,115vh)rotate(45deg);
+    }
+} */
