@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .flex-full{
     flex: 1;
 }
@@ -23,12 +26,12 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--soft-purple);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.6rem;
+    padding: 3.2rem 1.6rem 1.6rem 1.6rem;
 }
 body:has(.open){
     overflow: hidden;
@@ -40,21 +43,29 @@ body:has(.open){
     position: relative;
     z-index: 5;
     border-radius: .8rem;
-    padding: 1.6rem 5rem;
 }
 
-
+.inscription__progress{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    padding: 1.6rem 5rem;
+    background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
+    box-shadow:.4rem .4rem 10.2rem .2rem hsla(236, 50%, 50%, .3);
+}
 .inscription__progress-title{
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--text-black-1);
-    
+    color: var(--white);
+    padding-bottom: .5rem;
 }
 .inscription__progress-bar{
     width: 100%;
     border-radius: 2rem;
     overflow: hidden;
     border: 1px solid var(--fluorescent-green);
+    
 }
 .bar{
     width: 0%;
@@ -65,23 +76,25 @@ body:has(.open){
 
 .inscription__progress-value{
     position: absolute;
-    top: 38px;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
     font-size: 1.6rem;
+    transform: translate(-50% + 16px, -50% + 20px);
+    color: var(--white);
 }
 .header{
-    padding-top: 4rem;    
+    padding: 4rem 5rem 0rem 5rem;
 }
 .header__title{
-    color: var(--text-black-1);
+    color: var(--text-air-force-blue);
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: .8rem;
     border-bottom: 1px solid var(--border-grey);
 }
 .form{
-    padding: .8rem 0rem;
+    padding: .8rem 5rem;
+
 }
 .form__buttons{
     border: unset;
@@ -105,6 +118,7 @@ body:has(.open){
     width: 100%
 }
 .form__subTitle{
+    color: var(--text-air-force-blue);
     padding-bottom: 1.6rem;
     font-weight: 400;
     font-size: 1.8rem;
@@ -128,6 +142,7 @@ body:has(.open){
 .form__label{
     font-size: 1.5rem;
     line-height: 2rem;
+    color: var(--text-air-force-blue);
 
 }
 
@@ -140,6 +155,10 @@ body:has(.open){
     border-bottom: 1px solid var(--border-grey);
     font-size: 1.5rem;
     width: 100%;
+    color: #555555;
+}
+.form__control:placeholder-shown{
+    color: red;
 }
 .form__submit{
     border: 0px;

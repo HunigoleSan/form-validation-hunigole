@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", function () {
                 countStates += 1
             }
         }
-        if (countStates < 8) {
+        if (countStates < 9) {
             submit_HTML.classList.add("form__submit-default")
             submit_HTML.classList.add("opacity")
             statesSubmit = false

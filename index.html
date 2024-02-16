@@ -71,7 +71,7 @@
                         <div class="form__button">
                             <div class="form__control_data">
                                 <div class="form__input">
-                                    <label class="form__label" for="name">Name <b class="purple colors">*</b> </label>
+                                    <label class="form__label" for="name_">Name <b class="purple colors">*</b> </label>
                                     <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" maxlength="30" type="text" name="name" data-user="true" id="name_" required>
                                 </div>
                                 <p id="name-error" class="message name"></p>
@@ -101,7 +101,6 @@
                                         <div class="form__input">
                                             <label class="form__label city-title" for="date_of_birth">Date <b class="purple colors">*</b> </label>
                                             <input class="form__control control" type="date" data-user="true" name="date_of_birth" id="date_of_birth">
-                                            
                                         </div>
                                         <p id="date-of-birth-error" class="message date_of_birth"></p>
                                     </div>
@@ -202,7 +201,22 @@
                             
                         </div>
                     </div>
-                    
+                    <div class="form__row">
+                        <div class="form__btns">      
+                            <div class="width-50">
+                                <h3 class="form__subTitle">Email</h3>
+                                <div class="form__button">
+                                    <div class="form__control_data form__control_data-width">
+                                        <div class="form__input email-control">
+                                            <label class="form__label" for="email">Email<b class="purple colors">*</b> </label>
+                                            <input class="form__control control" type="email" name="email" data-user="true" id="email" required>
+                                        </div>
+                                        <p id="email-error" class="message email"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="form__row">
                         <button id="submit" type="button" class="form__submit">Enviar</button>
                     </div>

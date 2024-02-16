@@ -45,7 +45,7 @@ function setProgress(input,objectInput,states_control_fail) {
             objectInput[input.name].state = false
             let amountProgress = progressCount(objectInput)
             progress_HTML.style.width = `${(amountProgress / amountData) * 100}%`
-            progress_value_HTML.textContent = Math.floor(parseFloat(progress_HTML.style.width)) + "%"
+            progress_value_HTML.textContent = String(Math.floor(parseFloat(progress_HTML.style.width))).padStart(2,"0") + "%"
             keyAmount = 0
         }
     }

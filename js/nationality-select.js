@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded", function () {
             labelCell.classList.add("form-not-event")
             cell_error_HTML.classList.remove("meesageAnimation")
             cell_error_HTML.classList.add("meesageAnimation")
+            cell_error_HTML.classList.remove("form__message-error")
             cellPrevious.classList.add("form__input-border-default")
             cellPrevious.classList.add("form-select-default")
             cellPrevious.classList.remove("form__input-border-error")
@@ -64,14 +65,7 @@ window.addEventListener("DOMContentLoaded", function () {
             cell_HTML.addEventListener("mousedown", preventAction)
             objectInput.city.state = false
             objectInput.cell.state = false 
-            /* setProgress(data,objectInput,true) */
 
-            /* if (statesSelect) { */
-                /* console.log(objectInput.city)
-                objectInput.city.state = false
-                objectInput.cell.state = false */
-               /*  statesSelect = false
-            } */
             city_HTML.addEventListener('click',function(event){event.preventDefault()})
 
         } else if (typeof (data) === "object" && data.value != "choose") {
@@ -117,9 +111,6 @@ window.addEventListener("DOMContentLoaded", function () {
                     city_HTML.insertAdjacentElement("beforeend", optionCreate)
                 }
             }
-            /* if (statesSelect == false) {
-                statesSelect = true
-            } */
         }
     }
 
