@@ -1,13 +1,21 @@
-.box,
-.box * {
-    box-sizing: border-box;
-}
 
-.box {
-    width: 1079.41px;
-    height: 1276.41px;
+
+
+.cape-box{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    right: 0;
+    overflow: hidden;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: end;
+}
+.box {
+    position: relative;
+    min-width: 1079.41px;
+    height: 100%;
+    right: 0%;
     top: 50%;
     transform: translate(10%,-50%);
     background-color: var(--soft-purple);

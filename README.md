@@ -1,7 +1,7 @@
 Web: [# Form-validation-hunigole](https://hunigolesan.github.io/form-validation-hunigole)
 ## Welcome! 👋
-![Design preview create by HunigoleSan](./images/result_proyect.PNG)
-
+![Diseño creado por HugoSan](./images/result_proyect.PNG)
+![Prevista del formulario satisfactorio](./images/result_form_success.png)
 ## Skills
 
 Aquí se encuentran las tecnologías y herramientas utilizadas en este proyecto:

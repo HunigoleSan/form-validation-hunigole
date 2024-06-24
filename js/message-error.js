@@ -13,10 +13,9 @@ let messageResponse = {
         let patternErrorCellCharacters = /[a-zA-Z!@$%^&*()_+-/]+/;
         let patternErrorSpaceEmail = /(?<=\S)\s/g
         let patternSpace = /^\s+/
-        let patternNumber = /[\W\d_]+\s$/
         let patternDate = /^\d{4}-\d{2}-\d{2}/
         let patternEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        let patternSymbol = /[^a-zA-Z]+$/
+        let patternSymbol = /[^a-zA-Z\s]/
         let patternSymbolEmail = /[^a-zA-Z0-9@.]+$/
 
         let stateMessage = false
@@ -49,7 +48,6 @@ let messageResponse = {
                             stateMessage = false
                         }
                         customizationForm(stateMessage, parentInput, childSibling, message[key])
-
                     }
                     
                     if (input.id === "cell") {
@@ -133,7 +131,7 @@ let messageResponse = {
                             message[key].textContent = `It shouldn't be empty`
                             stateMessage = true
                         }else if(patternErrorSpaceEmail.test(input.value)){
-                            message[key].textContent = `cannot have space empty`
+                            message[key].textContent = `There can be no empty space`
                             stateMessage = true
                         }else if(patternEmail.test(input.value)){
                             message[key].textContent = `Correct`
@@ -147,7 +145,6 @@ let messageResponse = {
                         }
                         customizationForm(stateMessage, parentInput, childSibling, message[key])
                     }
-                    console.log("fecha", input.tagName)
                 }
             }
         }

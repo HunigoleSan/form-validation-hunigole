@@ -25,8 +25,6 @@ function customizationForm(stateMessage, parentInput, childSibling, message) {
     } else {
         if (parentInput.classList.contains("email-control")) {
             if (message.textContent === "Correct") {
-                console.log(message.textContent)
-
                 message.classList.remove("form__message-error");
                 message.classList.remove("form__message-default");
                 message.classList.add("form__message-success");

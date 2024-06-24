@@ -18,39 +18,41 @@
 
 <body>
     <section id="inscription" class="inscription">
-        <div class="box">
-            <div class="rect rect-purple-1"></div>
-            <div class="rect rect-purple-7"></div>
-            <div class="rect rect-purple-8"></div>
-            <div class="rect rect-purple-9"></div>
-            <div class="rect rect-purple-11"></div>
-            <div class="rect rect-purple-4"></div>
-            <div class="rect rect-purple-5"></div>
-            <div class="rect rect-purple-6"></div>
-            <div class="rect rect-green-2"></div>
-            <div class="rect rect-green-3"></div>
-            <div class="rect rect-green-4"></div>
-            <div class="rect rect-sky-1"></div>
-            <div class="rect rect-sky-3"></div>
-            <div class="rect rect-sky-32"></div>
-            <div class="rect rect-sky-4"></div>
-            <div class="rect rect-sky-5"></div>
-            <div class="rect rect-sky-7"></div>
-            <div class="rect rect-sky-8"></div>
-            <div class="rect rect-sky-10"></div>
-            <div class="rect rect-sky-11"></div>
-            <div class="rect rect-purple-62"></div>
-            <div class="rect rect-green-7"></div>
-            <div class="rect rect-green-8"></div>
-            <div class="rect rect-green-6"></div>
-            <div class="rect rect-purple-2"></div>
-            <div class="rect rect-purple-3"></div>
-            <div class="rect rect-green-1"></div>
-            <div class="rect rect-purple-10"></div>
-            <div class="rect rect-purple-82"></div>
-            <div class="rect rect-sky-9"></div>
-            <div class="rect rect-sky-2"></div>
-            <div class="rect rect-green-5"></div>
+        <div class="cape-box">
+            <div class="box">
+                <div class="rect rect-purple-1"></div>
+                <div class="rect rect-purple-7"></div>
+                <div class="rect rect-purple-8"></div>
+                <div class="rect rect-purple-9"></div>
+                <div class="rect rect-purple-11"></div>
+                <div class="rect rect-purple-4"></div>
+                <div class="rect rect-purple-5"></div>
+                <div class="rect rect-purple-6"></div>
+                <div class="rect rect-green-2"></div>
+                <div class="rect rect-green-3"></div>
+                <div class="rect rect-green-4"></div>
+                <div class="rect rect-sky-1"></div>
+                <div class="rect rect-sky-3"></div>
+                <div class="rect rect-sky-32"></div>
+                <div class="rect rect-sky-4"></div>
+                <div class="rect rect-sky-5"></div>
+                <div class="rect rect-sky-7"></div>
+                <div class="rect rect-sky-8"></div>
+                <div class="rect rect-sky-10"></div>
+                <div class="rect rect-sky-11"></div>
+                <div class="rect rect-purple-62"></div>
+                <div class="rect rect-green-7"></div>
+                <div class="rect rect-green-8"></div>
+                <div class="rect rect-green-6"></div>
+                <div class="rect rect-purple-2"></div>
+                <div class="rect rect-purple-3"></div>
+                <div class="rect rect-green-1"></div>
+                <div class="rect rect-purple-10"></div>
+                <div class="rect rect-purple-82"></div>
+                <div class="rect rect-sky-9"></div>
+                <div class="rect rect-sky-2"></div>
+                <div class="rect rect-green-5"></div>
+            </div>
         </div>
         <section class="inscription__data">
             <div class="inscription__progress">
@@ -72,21 +74,26 @@
                             <div class="form__control_data">
                                 <div class="form__input">
                                     <label class="form__label" for="name_">Name <b class="purple colors">*</b> </label>
-                                    <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" maxlength="30" type="text" name="name" data-user="true" id="name_" required>
+                                    <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                                        maxlength="30" type="text" name="name" data-user="true" id="name_" required>
                                 </div>
                                 <p id="name-error" class="message name"></p>
                             </div>
                             <div class="form__control_data">
                                 <div class="form__input">
-                                    <label class="form__label" for="second_name">Second Name <b class="purple colors">*</b> </label>
-                                    <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" maxlength="30" type="text" name="second_name" data-user="null" id="second_name">
+                                    <label class="form__label" for="second_name">Second Name <b
+                                            class="purple colors">*</b> </label>
+                                    <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                                        maxlength="30" type="text" name="second_name" data-user="null" id="second_name">
                                 </div>
                                 <p id="second-name-error" class="message second_name"></p>
                             </div>
                             <div class="form__control_data">
                                 <div class="form__input">
-                                    <label class="form__label" for="last_name">Last Name <b class="purple colors">*</b> </label>
-                                    <input class="form__control control" maxlength="60" type="text" data-user="true" name="last_name" id="last_name">
+                                    <label class="form__label" for="last_name">Last Name <b class="purple colors">*</b>
+                                    </label>
+                                    <input class="form__control control" maxlength="60" type="text" data-user="true"
+                                        name="last_name" id="last_name">
                                 </div>
                                 <p id="last-name-error" class="message last_name"></p>
                             </div>
@@ -99,8 +106,10 @@
                                 <div class="form__button">
                                     <div class="form__control_data form__control_data-width">
                                         <div class="form__input">
-                                            <label class="form__label city-title" for="date_of_birth">Date <b class="purple colors">*</b> </label>
-                                            <input class="form__control control" type="date" data-user="true" name="date_of_birth" id="date_of_birth">
+                                            <label class="form__label city-title" for="date_of_birth">Date <b
+                                                    class="purple colors">*</b> </label>
+                                            <input class="form__control control" type="date" data-user="true"
+                                                name="date_of_birth" id="date_of_birth">
                                         </div>
                                         <p id="date-of-birth-error" class="message date_of_birth"></p>
                                     </div>
@@ -111,8 +120,10 @@
                                 <div class="form__button">
                                     <div class="form__control_data form__control_data-width">
                                         <div class="form__input">
-                                            <label class="form__label city-title" for="genre">Genre <b class="purple colors">*</b> </label>
-                                            <select id="genre" class="form__control control" data-user="true" name="genre" required>
+                                            <label class="form__label city-title" for="genre">Genre <b
+                                                    class="purple colors">*</b> </label>
+                                            <select id="genre" class="form__control control" data-user="true"
+                                                name="genre" required>
                                                 <option value="choose">Choose</option>
                                                 <option value="Femenina">Femenina</option>
                                                 <option value="Masculino">Masculino</option>
@@ -123,17 +134,19 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="form__row">
-                        <div class="form__btns">      
+                        <div class="form__btns">
                             <div class="width-50">
                                 <h3 class="form__subTitle">Nationality</h3>
                                 <div class="form__button">
                                     <div class="form__control_data form__control_data-width">
                                         <div class="form__input">
-                                            <label class="form__label city-title" for="nationality">Nationality <b class="purple colors">*</b> </label>
-                                            <select id="nationality" class="form__control control" name="nationality" data-user="true" required>
+                                            <label class="form__label city-title" for="nationality">Nationality <b
+                                                    class="purple colors">*</b> </label>
+                                            <select id="nationality" class="form__control control" name="nationality"
+                                                data-user="true" required>
                                                 <option value="choose">Choose</option>
                                                 <option value="peruana">Peruana</option>
                                                 <option value="chilena">Chilena</option>
@@ -151,8 +164,10 @@
                                 <div class="form__button">
                                     <div class="form__control_data form__control_data-width">
                                         <div class="form__input">
-                                            <label class="form__label city-title" for="city">City <b class="purple colors">*</b> </label>
-                                            <select id="city" class="form__control control" data-user="true" name="city" required>
+                                            <label class="form__label city-title" for="city">City <b
+                                                    class="purple colors">*</b> </label>
+                                            <select id="city" class="form__control control" data-user="true" name="city"
+                                                required>
                                                 <option value="choose">Choose</option>
                                             </select>
                                         </div>
@@ -160,20 +175,23 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="form__row">
-                        <div class="form__btns">      
+                        <div class="form__btns">
                             <div class="width-50">
                                 <h3 class="form__subTitle">Cell phone</h3>
                                 <div class="form__button">
                                     <div class="form__control_data form__control_data-width">
                                         <div class="form__input">
-                                            <label class="form__label" for="cell">Cell <b class="purple colors">*</b> </label>
+                                            <label class="form__label" for="cell">Cell <b class="purple colors">*</b>
+                                            </label>
                                             <div class="flex">
                                                 <div id="prefix" class="form__prefix">--</div>
-                                                <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" type="tel" maxlength="9" name="cell" data-user="true" id="cell" required>
+                                                <input class="form__control control" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                                                    type="tel" maxlength="9" name="cell" data-user="true" id="cell"
+                                                    required>
                                             </div>
                                         </div>
                                         <p id="cell-error" class="message cell"></p>
@@ -185,8 +203,10 @@
                                 <div class="form__button">
                                     <div class="form__control_data form__control_data-width">
                                         <div class="form__input">
-                                            <label class="form__label city-title" for="course">Course <b class="purple colors">*</b> </label>
-                                            <select id="course" class="form__control control" data-user="true" name="course" required>
+                                            <label class="form__label city-title" for="course">Course <b
+                                                    class="purple colors">*</b> </label>
+                                            <select id="course" class="form__control control" data-user="true"
+                                                name="course" required>
                                                 <option value="choose">Choose</option>
                                                 <option value="frontEnd">Front-end</option>
                                                 <option value="backEnd">Back-end</option>
@@ -198,18 +218,20 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="form__row">
-                        <div class="form__btns">      
+                        <div class="form__btns">
                             <div class="width-50">
                                 <h3 class="form__subTitle">Email</h3>
                                 <div class="form__button">
                                     <div class="form__control_data form__control_data-width">
                                         <div class="form__input email-control">
-                                            <label class="form__label" for="email">Email<b class="purple colors">*</b> </label>
-                                            <input class="form__control control" type="email" name="email" data-user="true" id="email" required>
+                                            <label class="form__label" for="email">Email <b class="purple colors">*</b>
+                                            </label>
+                                            <input class="form__control control" type="email" name="email"
+                                                data-user="true" id="email" required>
                                         </div>
                                         <p id="email-error" class="message email"></p>
                                     </div>
@@ -223,12 +245,11 @@
                 </fieldset>
             </form>
         </section>
+        
     </section>
     <script src="js/form-validation.js" type="module"></script>
     <script src="js/nationality-select.js" type="module"></script>
     <script src="js/main.js" type="module"></script>
-
-
 </body>
 
 </html>
